@@ -2938,3 +2938,38 @@
 [2025-05-25T16:39:23.497+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:39:23.497+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2025-05-25T16:39:23.512+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:39:23.512+0000] {dag.py:3954} INFO - Setting next_dagrun for mysql_query_dag to None, run_after=None
 [2025-05-25T16:39:23.566+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/code_2.py took 0.139 seconds
+[2025-05-25T16:39:53.863+0000] {processor.py:161} INFO - Started process (PID=1888) to work on /opt/airflow/dags/code_2.py
+[2025-05-25T16:39:53.865+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/code_2.py for tasks to queue
+[2025-05-25T16:39:53.866+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:39:53.866+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/code_2.py
+[2025-05-25T16:39:53.890+0000] {processor.py:840} INFO - DAG(s) 'mysql_query_dag' retrieved from /opt/airflow/dags/code_2.py
+[2025-05-25T16:39:53.917+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:39:53.917+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-25T16:39:53.935+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:39:53.934+0000] {dag.py:3954} INFO - Setting next_dagrun for mysql_query_dag to None, run_after=None
+[2025-05-25T16:39:53.992+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/code_2.py took 0.136 seconds
+[2025-05-25T16:40:25.038+0000] {processor.py:161} INFO - Started process (PID=1891) to work on /opt/airflow/dags/code_2.py
+[2025-05-25T16:40:25.039+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/code_2.py for tasks to queue
+[2025-05-25T16:40:25.040+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:40:25.040+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/code_2.py
+[2025-05-25T16:40:25.060+0000] {processor.py:840} INFO - DAG(s) 'mysql_query_dag' retrieved from /opt/airflow/dags/code_2.py
+[2025-05-25T16:40:25.090+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:40:25.089+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-25T16:40:25.106+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:40:25.105+0000] {dag.py:3954} INFO - Setting next_dagrun for mysql_query_dag to None, run_after=None
+[2025-05-25T16:40:25.157+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/code_2.py took 0.126 seconds
+[2025-05-25T16:40:56.119+0000] {processor.py:161} INFO - Started process (PID=1895) to work on /opt/airflow/dags/code_2.py
+[2025-05-25T16:40:56.120+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/code_2.py for tasks to queue
+[2025-05-25T16:40:56.121+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:40:56.121+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/code_2.py
+[2025-05-25T16:40:56.144+0000] {processor.py:840} INFO - DAG(s) 'mysql_query_dag' retrieved from /opt/airflow/dags/code_2.py
+[2025-05-25T16:40:56.170+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:40:56.170+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-25T16:40:56.189+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:40:56.188+0000] {dag.py:3954} INFO - Setting next_dagrun for mysql_query_dag to None, run_after=None
+[2025-05-25T16:40:56.246+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/code_2.py took 0.134 seconds
+[2025-05-25T16:41:27.395+0000] {processor.py:161} INFO - Started process (PID=1898) to work on /opt/airflow/dags/code_2.py
+[2025-05-25T16:41:27.397+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/code_2.py for tasks to queue
+[2025-05-25T16:41:27.399+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:41:27.398+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/code_2.py
+[2025-05-25T16:41:27.425+0000] {processor.py:840} INFO - DAG(s) 'mysql_query_dag' retrieved from /opt/airflow/dags/code_2.py
+[2025-05-25T16:41:27.456+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:41:27.455+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-25T16:41:27.473+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:41:27.472+0000] {dag.py:3954} INFO - Setting next_dagrun for mysql_query_dag to None, run_after=None
+[2025-05-25T16:41:27.546+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/code_2.py took 0.157 seconds
+[2025-05-25T16:41:57.737+0000] {processor.py:161} INFO - Started process (PID=1901) to work on /opt/airflow/dags/code_2.py
+[2025-05-25T16:41:57.738+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/code_2.py for tasks to queue
+[2025-05-25T16:41:57.739+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:41:57.739+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/code_2.py
+[2025-05-25T16:41:57.757+0000] {processor.py:840} INFO - DAG(s) 'mysql_query_dag' retrieved from /opt/airflow/dags/code_2.py
+[2025-05-25T16:41:57.778+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:41:57.778+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-25T16:41:57.789+0000] {logging_mixin.py:188} INFO - [2025-05-25T16:41:57.789+0000] {dag.py:3954} INFO - Setting next_dagrun for mysql_query_dag to None, run_after=None
+[2025-05-25T16:41:57.836+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/code_2.py took 0.104 seconds
