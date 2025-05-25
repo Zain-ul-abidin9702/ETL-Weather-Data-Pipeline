@@ -1,0 +1,19 @@
+[2025-05-25T09:11:19.688+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-05-25T09:11:19.705+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_etl_pipeline.load_weather_data manual__2025-05-25T09:11:05.307817+00:00 [queued]>
+[2025-05-25T09:11:19.716+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_etl_pipeline.load_weather_data manual__2025-05-25T09:11:05.307817+00:00 [queued]>
+[2025-05-25T09:11:19.717+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-05-25T09:11:19.745+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_weather_data> on 2025-05-25 09:11:05.307817+00:00
+[2025-05-25T09:11:19.748+0000] {standard_task_runner.py:63} INFO - Started process 1185 to run task
+[2025-05-25T09:11:19.751+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'weather_etl_pipeline', 'load_weather_data', 'manual__2025-05-25T09:11:05.307817+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/etl_weather.py', '--cfg-path', '/tmp/tmpd3kv3yez']
+[2025-05-25T09:11:19.752+0000] {standard_task_runner.py:91} INFO - Job 31: Subtask load_weather_data
+[2025-05-25T09:11:19.811+0000] {task_command.py:426} INFO - Running <TaskInstance: weather_etl_pipeline.load_weather_data manual__2025-05-25T09:11:05.307817+00:00 [running]> on host fa09eeb0c661
+[2025-05-25T09:11:19.912+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_etl_pipeline' AIRFLOW_CTX_TASK_ID='load_weather_data' AIRFLOW_CTX_EXECUTION_DATE='2025-05-25T09:11:05.307817+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-25T09:11:05.307817+00:00'
+[2025-05-25T09:11:19.912+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-05-25T09:11:19.937+0000] {base.py:84} INFO - Using connection ID 'open_meteo_api' for task execution.
+[2025-05-25T09:11:20.557+0000] {logging_mixin.py:188} INFO - Raw weather data from api *********** : {'latitude': 51.5, 'longitude': -0.120000124, 'generationtime_ms': 0.046253204345703125, 'utc_offset_seconds': 0, 'timezone': 'GMT', 'timezone_abbreviation': 'GMT', 'elevation': 16.0, 'current_weather_units': {'time': 'iso8601', 'interval': 'seconds', 'temperature': '°C', 'windspeed': 'km/h', 'winddirection': '°', 'is_day': '', 'weathercode': 'wmo code'}, 'current_weather': {'time': '2025-05-25T09:00', 'interval': 900, 'temperature': 17.1, 'windspeed': 19.5, 'winddirection': 266, 'is_day': 1, 'weathercode': 2}}
+[2025-05-25T09:11:20.593+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-05-25T09:11:20.594+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-05-25T09:11:20.604+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=weather_etl_pipeline, task_id=load_weather_data, run_id=manual__2025-05-25T09:11:05.307817+00:00, execution_date=20250525T091105, start_date=20250525T091119, end_date=20250525T091120
+[2025-05-25T09:11:20.646+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-05-25T09:11:20.666+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-25T09:11:20.667+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

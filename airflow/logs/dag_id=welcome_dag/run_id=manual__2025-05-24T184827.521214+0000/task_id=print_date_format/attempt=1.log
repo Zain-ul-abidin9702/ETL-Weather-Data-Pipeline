@@ -1,0 +1,22 @@
+[2025-05-24T18:48:49.268+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-05-24T18:48:49.302+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: welcome_dag.print_date_format manual__2025-05-24T18:48:27.521214+00:00 [queued]>
+[2025-05-24T18:48:49.316+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: welcome_dag.print_date_format manual__2025-05-24T18:48:27.521214+00:00 [queued]>
+[2025-05-24T18:48:49.316+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-05-24T18:48:49.348+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_date_format> on 2025-05-24 18:48:27.521214+00:00
+[2025-05-24T18:48:49.353+0000] {standard_task_runner.py:63} INFO - Started process 116 to run task
+[2025-05-24T18:48:49.357+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'welcome_dag', 'print_date_format', 'manual__2025-05-24T18:48:27.521214+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/welcome.py', '--cfg-path', '/tmp/tmpge3mourd']
+[2025-05-24T18:48:49.359+0000] {standard_task_runner.py:91} INFO - Job 6: Subtask print_date_format
+[2025-05-24T18:48:49.454+0000] {task_command.py:426} INFO - Running <TaskInstance: welcome_dag.print_date_format manual__2025-05-24T18:48:27.521214+00:00 [running]> on host fa09eeb0c661
+[2025-05-24T18:48:49.823+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='welcome_dag' AIRFLOW_CTX_TASK_ID='print_date_format' AIRFLOW_CTX_EXECUTION_DATE='2025-05-24T18:48:27.521214+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-24T18:48:27.521214+00:00'
+[2025-05-24T18:48:49.825+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-05-24T18:48:49.849+0000] {logging_mixin.py:188} INFO - Printing the date format
+[2025-05-24T18:48:49.850+0000] {logging_mixin.py:188} INFO - TODAY DATE IS THIS ....
+[2025-05-24T18:48:49.851+0000] {logging_mixin.py:188} INFO - datetime.now :  2025-05-24 18:48:49.850941
+[2025-05-24T18:48:49.851+0000] {logging_mixin.py:188} INFO - time delta :  1 day, 0:00:00
+[2025-05-24T18:48:49.853+0000] {logging_mixin.py:188} INFO - 2025-05-23 18:48:49.853071
+[2025-05-24T18:48:49.854+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-05-24T18:48:49.857+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-05-24T18:48:49.900+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=welcome_dag, task_id=print_date_format, run_id=manual__2025-05-24T18:48:27.521214+00:00, execution_date=20250524T184827, start_date=20250524T184849, end_date=20250524T184849
+[2025-05-24T18:48:50.015+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-05-24T18:48:50.093+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-24T18:48:50.097+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
