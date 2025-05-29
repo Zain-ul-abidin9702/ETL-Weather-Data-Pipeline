@@ -16,6 +16,8 @@ API_CONN_ID = "open_meteo_api"
 
 
 def extract_weather_data(ti,**kwargs):
+    
+    print("<<<<<<<<<<<<<<<<<<<<<< Extracting weather data >>>>>>>>>>>>>>>>>>>>>>");
 
     # Use http hook to get the connection details from Airflow connection
     hook = HttpHook(method='GET', http_conn_id=API_CONN_ID)
